@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Gonzalo Celaya">
+	<meta name="description" content="Galería de arte moderno">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<title>Gonzalo's Gallery</title>
+</head>
+<body>
+	<div class="inicioContenedor" id="inicio">
+		<header>
+			<div class="nombreGalería">
+					<h1>Gonzalo Celaya</h1>
+					<h2>Gallery</h2>
+			</div>
+			<nav>
+				<a href="#" id="themeToggle" class="themeButton"></a>
+				<a href="pages/exposiciones.html">Exposiciones</a>
+				<a href="#expo">Sobre la Exposición</a>
+				<a href="#contacto">Contacto</a>
+			</nav>
+		</header>
+		
+		<div class="titulo">
+			<p>
+				El arte es el susurro del universo en el lienzo del alma
+			</p>
+		</div>
+		
+		<section class="scrollDown">
+			<a href="#expo"><img src="assets/images/scroll-down.png" width="60px" alt="Scroll-Down Icon"></a>
+		</section>
+	</div>
+	
+	<main class="acercaDe" id="expo" >
+		<h3>El Arte del Contraste: Voces en Blanco y Negro</h3>
+		<p>
+			El arte tiene el poder de trascender las barreras del tiempo, el lenguaje y el espacio. A través de su lente, somos invitados a explorar los vastos paisajes de la humanidad y la naturaleza, especialmente cuando estos dos mundos se entrelazan. Esta serie de exposiciones nos invita a sumergirnos en tres facetas distintas del arte, cada una con su propia narrativa y poder emotivo.
+		</p>
+		<div class="expo1">
+			<div class="foto">
+				<img src="assets/images/people-1.jpg" alt="Imagen de mujer con pintura en blanco y negro">
+			</div>
+			<div class="texto">
+				<h4>Siluetas Humanas</h4>
+				<p>
+					En la primera exhibición, el blanco y negro se convierte en el protagonista, despojando a la realidad de su multitud de colores para destacar las esencias más puras. Las obras presentadas aquí capturan la esencia del ser humano en su forma más básica, revelando historias, emociones y momentos que a menudo pasan desapercibidos en la vorágine del día a día. Los contrastes, las sombras y las texturas se entrelazan, creando una danza visual que revela la profunda conexión del ser humano con sus emociones y su entorno.
+				</p>
+			</div>
+		</div>
+		<div class="expo2">
+			<div class="texto">
+				<h4>Espejos de la Naturaleza</h4>
+				<p>
+					Después de explorar el alma humana, nos adentramos en el paisajismo de la naturaleza. A través de pinceladas meticulosas y técnicas variadas, los artistas nos presentan panorámicas de montañas majestuosas, vastos océanos y bosques serenos. Cada obra es un testimonio del resplandor y la magnitud de la madre naturaleza, invitando al espectador a reflexionar sobre nuestra relación con el entorno y la importancia de proteger y valorar la belleza natural que nos rodea.
+				</p>
+			</div>
+			<div class="foto">
+				<img src="assets/images/nature-1.jpg" alt="Imagen de piedras y niebla en blanco y negro">
+			</div>
+		</div>
+		<div class="expo3">
+			<div class="foto">
+				<img src="assets/images/mixed-1.jpg" alt="Imagen de mujer con pintura en blanco y negro">
+			</div>
+			<div class="texto">
+				<h4>Entrelazados</h4>
+				<p>
+					Finalmente, la tercera exhibición celebra la sinergia entre el hombre y la naturaleza. A través de obras que combinan elementos humanos y naturales, se destaca la coexistencia, interacción y, en ocasiones, colisión de estos dos mundos. Estas creaciones evocan reflexiones sobre la armonía, el conflicto y el papel que juega el ser humano en la vasta tela del universo.
+				</p>
+			</div>
+		</div>
+	</main>
+	
+	<section id="contacto" class="contacto scroll-section"><h3>Contacto</h3>
+		<form action="#" target="_blank">
+			<input type="text" id="nombre" name="name" placeholder="Nombre" required>
+			<input type="text" id="apellidos" name="name" placeholder="Apellidos" required>
+			<input type="email" id="email" name="email" placeholder="Email" required>
+			<input type="tel" id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]{9}" required>
+			<select  id="exposicion" name="exposicion" required>
+				<option value="" selected>Seleccione una exposición</option>
+				<option value="siluetas">Siluetas Humanas</option>
+				<option value="espejos">Espejos de la Naturaleza</option>
+				<option value="entrelazados">Entrelazados</option>
+			</select>
+			<input type="submit" value="Descargar Entrada">
+		</form>
+		<section class="scrollUp">
+			<a href="#inicio"><img src="assets/images/scroll-up.png" width="60px" alt="Scroll-Up Icon"></a>
+		</section>
+		
+	</section>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/entrada.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+</body>
+</html>

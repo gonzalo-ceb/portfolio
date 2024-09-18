@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Playfair+Display&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: url("../images/fondo-2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+body.light-mode {
+    background: url("../images/fondo-claro.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.titulo, .pagina, .info {
+    display: none;  /* Ocultamos todas las páginas por defecto */
+}
+#titulo1, #pagina1, #info1 { /* Mostramos página1 por defecto */
+    display: block;
+}
+
+/*INICIO*/
+.inicioContenedor{
+    width: 90%;
+    min-height: 100vh;
+    position: relative;
+}
+header {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body.light-mode header {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .nombreGalería {
+    margin-left: 10px;
+}
+header .nombreGalería a {
+    text-decoration: none;
+    color: white;
+}
+body.light-mode header .nombreGalería a {
+    text-decoration: none;
+    color: black;
+}
+header .nombreGalería h1 {
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 3.5rem;
+}
+header .nombreGalería h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+header nav{
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+header nav a{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+body.light-mode header nav a{
+    position: relative;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+}
+.themeButton{
+    background: url("../images/theme-light.png") no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+body.light-mode .themeButton{
+    background: url("../images/theme-dark.png") no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header nav a::after {
+  content: "·";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav a:last-child::after {
+  content: "";
+}
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-top: 300px;
+    color: white;
+    text-align: center;
+}
+body.light-mode .titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-top: 300px;
+    color: black;
+    text-align: center;
+}
+.scrollDown1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10%;
+}
+body.light-mode .scrollDown1 a img {
+    content: url("../images/scroll-down-dark.png");
+    width: 60px;
+}
+.scrollDown2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10%;
+}
+body.light-mode .scrollDown2 a img {
+    content: url("../images/scroll-down-dark.png");
+    width: 60px;
+}
+.scrollUp {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10%;
+}
+body.light-mode .scrollUp a img {
+    content: url("../images/scroll-up-dark.png");
+    width: 60px;
+}
+
+.pagina {
+    position: relative;
+}
+.exposición {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+}
+.imagenContenedor {
+    width: 30%;
+    margin-bottom: 120px;
+}
+.imagenContenedor img {
+   width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid grey;
+    opacity: .8;
+}
+body.light-mode .imagenContenedor img {
+   width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    opacity: .8;
+}
+.imagenContenedor img:hover {
+    border:1px solid white;
+    opacity: 1;
+}
+body.light-mode .imagenContenedor img:hover {
+    border:1px solid black;
+    opacity: 1;
+}
+.imagenContenedor p {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+body.light-mode .imagenContenedor p {
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+.info {
+    position: relative;
+}
+
+.textoInfo {
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    min-height: 100vh;
+    text-align: center;
+    font-weight: lighter;
+}
+body.light-mode .textoInfo {
+    color: black;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    min-height: 100vh;
+    text-align: center;
+    font-weight: lighter;
+}
+.textoInfo h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.textoInfo p {
+    font-size: clamp(1rem, 1.7rem, 2vw);
+    bottom: 60px;
+}
+
+.navBar {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14%;
+}
+.navBar  a{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+body.light-mode .navBar  a{
+    position: relative;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+}
+.navBar a:hover {
+    text-decoration: underline;
+}
+.navBar a::after {
+  content: "·";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navBar a:last-child::after {
+  content: "";
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1070px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .nombreGalería {
+        margin: auto;
+    }
+    header nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .titulo {
+        margin-top: 200px;
+    }
+    .exposición {
+        margin-top: 30px;
+    }
+    .imagenContenedor {
+        width: 50%;
+    }
+    .scrollDown2 {
+        height: 7%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .imagenContenedor {
+        width: 100%;
+    }
+    .scrollDown2 {
+        height: 3%;
+    }
+}
